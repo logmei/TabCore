@@ -1,0 +1,177 @@
+body{
+  /* font-family: PingFangSC-Semibold, PingFang SC; */
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  background: #F2F9FF;
+  position: relative;
+}
+
+.content{
+background-color: #fff;
+width: 1200px;
+/* min-height: 778px; */
+margin: auto;
+}
+
+
+.content .doc-content{
+padding: 44px 32px;
+font-size: 16px;
+font-weight: 300;
+color: #333333;
+line-height: 28px;
+}
+
+.doc-content-title{
+  width: 739px;
+  font-size: 43px;
+  /* font-family: PingFangSC-Semibold, PingFang SC; */
+  font-weight: 600;
+  color: #333333;
+  line-height: 61px;
+  margin: auto;
+  text-align: center;
+  margin-top: 71px;
+  margin-bottom: 79px;
+}
+
+.mission-years{
+  /* position: absolute;
+  left: 0; */
+  display: 'none';
+width: 100%;
+height: 930px;
+padding-top: 75px;
+background-image: url('../images/years-back.png');
+background-repeat: no-repeat;
+}
+
+.mission-years .years-title,.months-content{
+  width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.mission-years .years-title{
+  margin-bottom: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mission-years .years-title .iconfont{
+  cursor: pointer;
+}
+
+.mission-years .years-title .years{
+  display: flex;
+  width: 1026px;
+  overflow: hidden;
+  font-size: 42px;
+  font-weight: 600;
+  color: #858585;
+  line-height: 59px;
+}
+.mission-years .years-title .years div{
+  margin-right: 102px;
+  cursor: pointer;
+  box-sizing: border-box;
+  white-space: nowrap;
+  transition: transform 1s;
+}
+
+.mission-years .years-title .years div:last-child{
+  margin-right: 0;
+}
+
+.mission-years .years-title .years .selected{
+  color: #437EE9;
+}
+.mission-years .years-title .years .year{
+  font-size: 19px;
+  font-weight: 600;
+  color: #C1C1C1;
+  line-height: 26px;
+  margin-left: 3px;
+}
+.mission-years .years-title .iconfont{
+  font-size: 52px;
+  color: #858585;
+}
+
+.mission-years .years-title .noused{
+  color: rgba(133, 133, 133, 0.21);
+}
+
+.mission-years .years-title .right{
+  transform: scaleX(-1);
+}
+.mission-years .months-content{
+  height: 750px;
+  overflow-y:auto;
+  display: none;
+}
+.mission-years .months-content .month-content{
+  display: flex;
+  margin-left: 50px;
+}
+
+.mission-years .months-content .month-content .month{
+  font-size: 18px;
+  font-weight: 600;
+  color: #437EE9;
+  line-height: 18px;
+  display: flex;
+  margin-right: 31px;
+  position: relative;
+  top: 22px;
+}
+
+.mission-years .months-content .month-content .month span{
+  position: relative;
+  top: 9px;
+  width: 38px;
+  white-space: nowrap;
+}
+
+.mission-years .months-content .month-content .month::before{
+  content: '';
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: #437EE9;
+  order: 1;
+  z-index: 10;
+  margin-left: 17px;
+}
+
+.mission-years .months-content .month-content .month::after{
+  content: '';
+  display: block;
+  height: 100%;
+  width: 1px;
+  position: relative;
+  order: 2;
+  background-color: #C1C1C1;
+  right: 18px;
+}
+
+.mission-years .months-content .month-content .month-content-items{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mission-years .months-content .month-content .month-content-items .item{
+  background-color: #fff;
+  padding: 28px 27px;
+  margin-right: 51px;
+  margin-bottom: 44px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
