@@ -1,0 +1,195 @@
+/*!***************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/content-tab.css ***!
+  \***************************************************************************/
+
+.content{
+  position: relative;
+}
+.content .nave{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #E8E8E8;
+  padding: 11px 32px;
+  }
+
+  .content .tabs-content{
+    display: none;
+  }
+
+
+.sliderBlock{
+  position: absolute; 
+  opacity: 0;
+  top: 50px; 
+  left: 32px;
+  transition: all 0.3s;
+  width: 94px;
+  height: 3px;
+  background: #ef8d1d;
+}
+  
+.content .nave span::after{
+  content: '';
+  width: 94px;
+  height: 3px;
+  display: block;
+  position: relative;
+  top: 11px;
+  background: #fff;
+  transition: all 0.6s;
+}
+  .content .nave .selected{
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s;
+  }
+  .content .nave .selected::after{
+  background: #EF8D1D;
+  transition: all 0.6s;
+  }
+  .content .nave span{
+  line-height: 28px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #858585;
+  cursor: pointer;
+  }
+
+  ::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #437EE9;
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-track{
+    background-color: #C1C1C1;
+  }
+
+
+/*!***************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/more-dialog.css ***!
+  \***************************************************************************/
+html,body{
+  height: 100%;
+  overflow: auto;
+}
+.more_dialog{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  top: 0;
+  background-color: rgba(51, 51, 51, 0.37);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more_dialog_content{
+  max-width: 1061px;
+  padding: 116px 68px;
+  font-size: 18px;
+  /* font-family: PingFangSC-Medium, PingFang SC; */
+  font-weight: 500;
+  color: #333333;
+  line-height: 28px;
+  background-color: #fff;
+}
+/*!************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/vertical-content-tab.css ***!
+  \************************************************************************************/
+.vertical-content{
+  display: flex;
+  padding: 12px 16px;
+  position: relative;
+  min-height: 500px;
+}
+
+.vertical-content .left{
+  width: 302px;
+  margin-right: 22px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #858585;
+  line-height: 18px;
+  background: #F6F6F6;
+}
+
+.vertical-content .left .selected{
+  background: #437EE9;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.vertical-content .left .selected::after{
+  content: '';
+  display: block;
+  position: absolute;
+  right: -35px;
+  top: 11px;
+  border: 18px solid transparent;
+  border-left: 18px solid #437EE9;
+}
+
+.vertical-content .left span{
+  display: block;
+  height: 57px;
+  position: relative;
+  padding-left: 15px;
+  line-height: 57px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.vertical-content .right{
+  flex:1;
+  border: 1px solid #C1C1C1;
+  /* max-height: 800px; */
+  overflow: auto;
+  position: sticky;
+  top: 0;
+}
+
+.vertical-content .right .right-content-item{
+  display: none;
+}
+
+.content-details-padding{
+  padding: 40px 32px;
+}
+
+.content-details-content{
+  font-size: 16px;
+ /* font-family: PingFangSC-Regular, PingFang SC; */
+  font-weight: 400;
+  color: #333333;
+  line-height: 28px;
+  text-indent: 2em;
+  box-sizing: border-box;
+}
+
+.content-details-content-article{
+  box-sizing: border-box;
+  padding: 0 32px;
+}
+
+.content-details-content-article .title{
+  font-size: 35px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 49px;
+  margin-top: 29px;
+  text-align: center;
+}
+
+.content-details-content-article .details{
+  margin-top: 28px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 28px;
+  text-indent: 2em;
+}
+
