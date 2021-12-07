@@ -2,7 +2,8 @@ const path = require('path')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry:'./src/',
+  entry:['./src/index.js'],
+  mode:'production',
   output:{
     filename:'index.js',
     path:path.resolve(__dirname,'lib'),
@@ -23,16 +24,42 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader
             // loader:"ExtractCssFile"
           },
+         
         {
           loader:"css-loader",
           options:{
-            esModule: true,
-            modules:{
-              namedExport: true,
-              localIdentName: "[name]"
-            }
+            url:false
+            // esModule: true,
+            // modules:{
+            //   namedExport: true,
+            //   localIdentName: "[name]"
+            // }
           }
-        }]
+        },
+        {
+          loader:'postcss-loader',
+          options: {
+            postcssOptions: {
+              plugins: [
+                [
+                  "autoprefixer",
+                  {
+                    // Options
+                  },
+                ],
+              ],
+            },
+          },
+        },]
+      },
+      {
+        test:/\.js$/,
+        exclude: /node_modules/,
+        use:[
+          {
+            loader:'babel-loader'
+          }
+        ]
       }
     ]
   },

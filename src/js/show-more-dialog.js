@@ -98,9 +98,9 @@ ShowMoreDialog.prototype.remove = function(index){
 function CreateElementByObj({tagName,attributes,textNode,child}){
   var ele = document.createElement(tagName)
   if(attributes){
-    Object.entries(attributes).forEach(e=>{
-      ele[e[0]] = e[1]
-    })
+    for(var key in attributes){
+      ele[key] = attributes.key
+    }
   }
   if(textNode){
     var t = document.createTextNode(textNode)

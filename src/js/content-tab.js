@@ -20,7 +20,7 @@ function ContentTab({initIndex,id,selectedClassName,contentClassName,displayName
   this.hiddenType = hiddenType || 'display' // 'visibility'
   this.zIndex = defaultZIndex || 0 
   this.eventsTriger = 3
-
+  Object.entries(this).forEach(e=>console.log(e))
 }
 /**
  * 初始化点击事件
@@ -181,7 +181,7 @@ ContentTab.prototype.bandYearsListener = function(id){
   // 移动
   function move(id,that){
     var parent = document.getElementById(id)
-    var eles = parent.querySelectorAll('[name=year-item]')
+    var eles = parent.querySelectorAll('div')
     var distance = that.yearsMoveNum * that.yearsMoveOffset
     var arr = Array.prototype.slice.call(eles)
     for(var i = 0;i<eles.length;i++){

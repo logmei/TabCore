@@ -8,16 +8,35 @@
   },
   "scripts": {
     "dev": "webpack --config webpack.config.dev.js",
+    "gulpfiles": "gulp --gulpfile=gulpfile.js",
     "build": "webpack",
     "buildCss": "webpack --config webpack.config.css.js"
   },
   "author": "logmei",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "autoprefixer": "^10.4.0",
+    "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
+    "cssnano": "^5.0.10",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
     "mini-css-extract-plugin": "^2.4.4",
+    "postcss-loader": "^6.2.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.62.1",
     "webpack-cli": "^4.9.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.16.3",
+    "core-js": "^3.19.1"
   }
 }

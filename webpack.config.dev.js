@@ -17,23 +17,32 @@ module.exports = {
   },
   module:{
     rules:[
+      // {
+      //   test:/\.css$/,
+      //   use: [
+      //     {
+      //       loader: MiniCssExtractPlugin.loader
+      //       // loader:"ExtractCssFile"
+      //     },
+      //   {
+      //     loader:"css-loader",
+      //   }]
+      // }
       {
-        test:/\.css$/,
-        use: [
+        test:/\.js$/,
+        exclude: /node_modules/,
+        use:[
           {
-            loader: MiniCssExtractPlugin.loader
-            // loader:"ExtractCssFile"
-          },
-        {
-          loader:"css-loader",
-        }]
+            loader:'babel-loader'
+          }
+        ]
       }
     ]
   },
   plugins:[
-    new MiniCssExtractPlugin({
-      filename:"[name].css",
-      chunkFilename:"[id].css"
-    })
+    // new MiniCssExtractPlugin({
+    //   filename:"[name].css",
+    //   chunkFilename:"[id].css"
+    // })
   ]
 }

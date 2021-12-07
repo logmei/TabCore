@@ -6,13 +6,16 @@
 }
 
 .vertical-content .left{
-  width: 302px;
-  margin-right: 22px;
+  width: 324px;
+  /* margin-right: 22px; */
   font-size: 18px;
   font-weight: 400;
   color: #858585;
   line-height: 18px;
-  background: #F6F6F6;
+  max-height: 817px;
+  overflow: auto;
+  direction: rtl;
+  cursor: pointer;
 }
 
 .vertical-content .left .selected{
@@ -33,17 +36,22 @@
 
 .vertical-content .left span{
   display: block;
+  width: 280px;
   height: 57px;
   position: relative;
   padding-left: 15px;
   line-height: 57px;
+  background: #F6F6F6;
   border-bottom: 1px solid #E6E6E6;
+  direction: ltr;
+  margin-right: auto;
 }
 
 .vertical-content .right{
   flex:1;
   border: 1px solid #C1C1C1;
   /* max-height: 800px; */
+  height: 817px;
   overflow: auto;
   position: sticky;
   top: 0;

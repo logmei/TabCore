@@ -1,0 +1,23 @@
+{
+  "name": "tab-core",
+  "version": "1.0.0",
+  "description": "tab切换",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "webpack --config webpack.config.dev.js",
+    "build": "webpack",
+    "buildCss": "webpack --config webpack.config.css.js"
+  },
+  "author": "logmei",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.4.4",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1"
+  }
+}
